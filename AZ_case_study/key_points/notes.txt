@@ -1,0 +1,53 @@
+Data limitations
+################
+Not all data in openFDA has been validated for clinical or production use. 
+And because openFDA only serves publicly available data, it does not contain data with Personally Identifiable Information about patients or other sensitive information.
+
+FDA Disclaimer: 
+###############
+"Do not rely on openFDA to make decisions regarding medical care. 
+While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service."
+
+Limits of openFDA harmonization
+################################
+Not all records have harmonized fields. Because the harmonization process requires an exact match, some drug products cannot be harmonized in this fashion—for instance, if the drug name is misspelled. Some drug products will have openfda sections, while others will never, if there was no match during the harmonization process. 
+Conversely, searching in these fields will only return a subset of records from a given endpoint.
+
+# Notes on updating data
+#########################
+To keep your downloaded data up to date, you need to re-download the data every time it is updated. Every time an endpoint is updated (which happens on a regular basis), it is possible that every record has changed, due to corrections or enhancements. That means that you cannot simply download “new” files to keep your downloaded version up to date. You need to download all available data files for the endpoint of interest.
+
+Update frequency:
+##################
+Quarterly. However, please be advised that the data in this API may lag by 3 months or more at any given time, depending on when the quarterly FAERS data is released.
+
+Event reporting
+################
+Reporting of adverse events by healthcare professionals and consumers is voluntary in the United States. 
+FDA receives some adverse event reports directly from healthcare professionals (such as physicians, pharmacists, nurses and others) and consumers (such as patients, family members, lawyers and others). 
+Healthcare professionals and consumers may also report adverse events to the products’ manufacturers. 
+If a manufacturer receives an adverse event report, it is normally required to send the report to FDA.
+
+Caveats about event data
+########################
+Any number of the drugs may be marked as suspect if thought to be responsible for one or more of the reactions, but that information is not validated. 
+Concomitant drugs are those which are not suspected of causing one or more of the reactions. 
+Many drug products appear frequently in adverse event reports simply because they are commonly taken by many people in the population, not because they are responsible for more adverse events.
+
+Responsible use of the data (no causal relationships)
+#####################################################
+Adverse event reports submitted to FDA do not undergo extensive validation or verification. Therefore, a causal relationship cannot be established between product and reactions listed in a report. While a suspected relationship may exist, it is not medically validated and should not be the sole source of information for clinical decision making or other assumptions about the safety or efficacy of a product.
+Additionally, it is important to remember that adverse event reports represent a small percentage of total usage numbers of a product. Common products may have a higher number of adverse events due to the higher total number of people using the product. In recent years the FDA has undertaken efforts to increase collection of adverse events. Increases in the total number of adverse events is likely caused by improved reporting.
+
+FAERS data does have limitations. There is no certainty that the reported event (adverse event or medication error) was actually due to the product. FDA does not require that a causal relationship between a product and event be proven, and reports do not always contain enough detail to properly evaluate an event.
+Further, FDA does not receive reports for every adverse event or medication error that occurs with a product. Many factors can influence whether or not an event will be reported, such as the time a product has been marketed and publicity about an event.
+Submission of a safety report does not constitute an admission that medical personnel, user facility, importer, distributor, manufacturer or product caused or contributed to the event. The information in these reports has not been scientifically or otherwise verified as to a cause and effect relationship and cannot be used to estimate the incidence of these events.
+
+
+
+
+
+
+
+
+
